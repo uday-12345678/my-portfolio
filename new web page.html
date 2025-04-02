@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <script src="script.js" defer></script> <!-- Link to JavaScript file -->
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="#about"><button>About</button></a>
+            <a href="#skills"><button>Skills</button></a>
+            <a href="#projects"><button>Projects</button></a>
+            <a href="#contact"><button>Contact</button></a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Gemeni Uday</h2>
+            <p>I am passionate about web development.</p>
+            <p>I am currently pursuing my B.Tech in CSE at <em>Vellore Institute of Technology</em>, AP Branch.</p>
+            <p>My CGPA is 8.25. <br> Languages known: Java, Python.</p>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ol>
+                <li>Python basics</li>
+                <li>Java programming</li>
+                <li>HTML & CSS basics</li>
+                <li>SQL</li>
+            </ol>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <table>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>Built a portfolio website using HTML, CSS, and JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Birds species recognition</td> 
+                    <td>Built a  DL Model based on Deep Learning techniques like tensorflow,keras to predict a bird species by using image as a input.</td>
+                </tr>
+                <tr>
+                    <td>job description and recommendation system</td>
+                    <td>built a job recommendation system by using nlp techniques,tools like NLTK,Spacy,Tf-Idf.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to get in touch with me.</p>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <br>
+
+                <label for="interest">Select your interest:</label>
+                <input type="checkbox" id="coding" name="interest" value="coding">
+                <label for="coding">Coding</label>
+                <input type="checkbox" id="reading" name="interest" value="reading">
+                <label for="reading">Reading</label>
+                <br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gemeni Uday. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
